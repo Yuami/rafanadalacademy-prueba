@@ -25,15 +25,11 @@ Todos los endpoints estan debajo de `{DOMAIN}/api/{ENDPOINT}`. En este caso seri
 GET|/users|-|Devuelve todos los usuarios.
 GET|/users/{id}|-|Devuelve un usuario.
  | | | 
- | | | 
- | | | 
 GET|/players|compare=handed/genre/birthdate/void|Te da los datos de todos los jugadores o puede utilizarse para comparar stats entre jugadores.
 GET|/players/{id}|-|Devuelve los datos de un jugador en concreto.
 GET|/players/{id}/utr|-|Devuelve el utr de un jugador.
 GET|/players/{id}/classification|-|Devuelve los datos de la tabla classification de un jugador.
 GET|/players/{id}/country|-|Devuelve la nacion de un jugador.
- | | | 
- | | | 
  | | | 
 GET|/countries|-|Devuelve todas las naciones.
 GET|/countries/{code}|-|Devuelve una nación.
