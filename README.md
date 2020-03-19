@@ -18,7 +18,7 @@ Una vez tengais el proyecto clonado:
 ***
 **API**
 
-Todos los endpoints estan debajo de `{DOMAIN}/api/{ENDPOINT}`. En este caso seria `DOMAIN = localhost:8000` por defcto 
+Todos los endpoints estan debajo de `{DOMAIN}/api/{ENDPOINT}`. En este caso seria `DOMAIN = http://localhost:8000` por defcto 
  
 **VERB**|**ENDPOINT**|**OPTIONS**|**DESCRIPTION**
 :-----:|:-----:|:-----:|:-----:
