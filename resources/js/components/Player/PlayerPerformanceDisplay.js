@@ -23,8 +23,8 @@ export default function PlayerPerformanceDisplay ({ data }) {
         labels: data.map((item) => item.date),
         datasets: [
             {
-                data: data.map((item) => item.value),
-                label: 'Value KPI',
+                data: data.map((item) => item.value || 0),
+                label: 'Performance',
                 ...constants.dataSetsOptions.TENNIS_PERFORMANCE.dataSetOptions,
             }
         ]
@@ -38,8 +38,6 @@ export default function PlayerPerformanceDisplay ({ data }) {
             date,
         }
     ))
-
-    console.log(events)
 
     return (
         <>
@@ -60,9 +58,6 @@ export default function PlayerPerformanceDisplay ({ data }) {
                     <h3>Player progress</h3>
                     <Line data={dataset} options={constants.dataSetsOptions.TENNIS_PERFORMANCE.options}/>
                 </Paper>
-            </Grid>
-
-            <Grid item xs={12} md={6}>
             </Grid>
         </>
     )
