@@ -28,6 +28,7 @@ GET|/players|compare=void/handed/gender/birthdate|Te da los datos de todos los j
 GET|/players/{id}|-|Devuelve los datos de un jugador en concreto.
 GET|/players/{id}/utr|-|Devuelve el utr de un jugador.
 GET|/players/{id}/classification|-|Devuelve los datos de la tabla classification de un jugador.
+GET|/players/{id}/classification/tennis|-|Devuelve los datos de la tabla tennis de un jugador.
 GET|/players/{id}/country|-|Devuelve la nacion de un jugador.
 GET|/countries|-|Devuelve todas las naciones.
 GET|/countries/{code}|-|Devuelve una nación.
