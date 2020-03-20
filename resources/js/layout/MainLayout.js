@@ -16,9 +16,8 @@ const useStyles = makeStyles(theme => ({
 }))
 
 export default function MainLayout ({headerContent, handlePlayer, children }) {
-    const classes = useStyles()
-
     const [open, setOpen] = React.useState(false)
+    const classes = useStyles()
 
     const handleDrawerOpen = () => {
         setOpen(true)
