@@ -1,7 +1,7 @@
 **Requisitos**
 - [x] Descargar el proyecto.
 - [x] Tener acceso a la DB.
-- [x] PHP 7.2+.
+- [x] PHP 7.4+.
 - [x] MySQL 5.1
 ***
 **Instrucciones**
