@@ -26,6 +26,9 @@
         "browser-sync": "^2.26.7"
     },
     "dependencies": {
+        "@fullcalendar/core": "^4.4.0",
+        "@fullcalendar/daygrid": "^4.4.0",
+        "@fullcalendar/react": "^4.4.0",
         "@material-ui/core": "^4.9.5",
         "@material-ui/icons": "^4.9.1",
         "chart.js": "^2.9.3",

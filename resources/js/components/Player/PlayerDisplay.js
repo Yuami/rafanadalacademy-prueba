@@ -10,7 +10,7 @@ import PlayerCompare from './PlayerCompare/PlayerCompare'
 const useStyles = makeStyles(theme => ({
     paper: {
         marginTop: '16px',
-        padding: theme.spacing(2),
+        padding: '32px',
         display: 'flex',
     },
     avatar: {

@@ -22,7 +22,7 @@ export default function PlayerHeader ({ handlePlayer }) {
     const playerSelectString = (player) => `#(${player.id}) ${player.fullname}`
 
     useEffect(() => {
-        api.getPlayers().then(response => setPlayers(response.data))
+        api.fetchPlayers().then(response => setPlayers(response.data))
     }, [])
 
     const value = player !== null ? player.player.fullname : ''

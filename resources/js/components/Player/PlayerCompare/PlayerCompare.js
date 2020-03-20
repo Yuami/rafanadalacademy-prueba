@@ -21,9 +21,9 @@ export default function PlayerCompare () {
     }
 
     useEffect(() => {
-        api.comparePlayerData(constants.compare.GENDER).then(({ data }) => setGenderData(data))
-        api.comparePlayerData(constants.compare.HAND).then(({ data }) => setHandData(data))
-        api.comparePlayerData(constants.compare.AGE).then(({data}) => setAgeData(data))
+        api.comparePlayersData(constants.compare.GENDER).then(({ data }) => setGenderData(data))
+        api.comparePlayersData(constants.compare.HAND).then(({ data }) => setHandData(data))
+        api.comparePlayersData(constants.compare.AGE).then(({data}) => setAgeData(data))
     }, [])
 
     const genderText = () => {

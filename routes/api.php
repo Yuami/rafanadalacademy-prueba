@@ -25,6 +25,8 @@ Route::get('/players/{player}/classification', 'PlayerController@classification'
 
 Route::get('/players/{player}/utr', 'PlayerController@utr');
 
+Route::get('/players/{player}/classification/tennis', 'PlayerClasificationController@tennis');
+
 Route::get('/users', function () {
     return User::all();
 });

@@ -10,11 +10,10 @@ import api from '../api'
 function Player () {
     const [tab, setTab] = React.useState(0)
     const [player, setPlayer] = React.useState(null)
-    console.log(player)
 
     const handlePlayer = (event) => {
         const player = event.target.value
-        api.getPlayerData(player).then(player => setPlayer(player))
+        api.fetchPlayerData(player).then(player => setPlayer(player))
     }
 
     const handleChangeTab = (event, newTab) => {

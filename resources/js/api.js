@@ -2,36 +2,43 @@ import constants from './constants'
 
 const { API_URL } = constants.api
 
-const getPlayers = async () => {
+const fetchPlayers = async () => {
     return axios(`${API_URL}/players`)
 }
 
-const getPlayer = async (player) => {
+const fetchPlayer = async (player) => {
     const id = player?.id ? player.id : player
 
     return axios(`${API_URL}/players/${id}/classification`)
 }
 
-const getCountry = async (doc_country) => {
+const fetchCountry = async (doc_country) => {
     return axios(`${API_URL}/countries/${doc_country}`)
 }
 
-const getPlayerData = async (player) => {
-    const { data } = await getPlayer(player)
-    const country = await getCountry(data.player.doc_country)
+const fetchPlayerData = async (player) => {
+    const { data } = await fetchPlayer(player)
+    const country = await fetchCountry(data.player.doc_country)
     data.country = country.data
-    console.log(data)
+
     return data
 }
 
-const comparePlayerData = async (type) => {
+const fetchPlayerTennis = async (player) => {
+    const id = player?.id ? player.id : player
+
+    return axios(`${API_URL}/players/${id}/classification/tennis`)
+}
+
+const comparePlayersData = async (type) => {
     return axios(`${API_URL}/players?compare=${type}`)
 }
 
 export default {
-    getPlayers,
-    getPlayer,
-    getCountry,
-    getPlayerData,
-    comparePlayerData,
+    fetchPlayers,
+    fetchPlayer,
+    fetchCountry,
+    fetchPlayerData,
+    comparePlayersData,
+    fetchPlayerTennis,
 }

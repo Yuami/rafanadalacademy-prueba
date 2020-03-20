@@ -48,4 +48,9 @@ class PlayerClasification extends Model
     {
         return $this->belongsTo("App\User", "teacher_user_id");
     }
+
+    public function tennis()
+    {
+        return $this->hasMany("App\Tennis");
+    }
 }
