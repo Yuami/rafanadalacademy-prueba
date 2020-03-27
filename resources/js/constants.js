@@ -1,8 +1,8 @@
 export default {
     DRAWER_WIDTH: 240,
     api: {
-        BASE_URL: 'http://localhost',
-        API_URL: 'http://localhost/api'
+        BASE_URL: 'http://3.216.93.93',
+        API_URL: '/api'
     },
     compare: {
         HAND: 'handed',
